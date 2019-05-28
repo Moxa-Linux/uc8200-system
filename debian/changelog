@@ -1,0 +1,5 @@
+uc8200-system (1.0.0+deb9) stretch; urgency=medium
+
+  * initail release
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Mon, 27 May 2019 13:55:54 +0800

@@ -1,0 +1,40 @@
+Source: uc8200-system
+Section: admin
+Priority: required
+Maintainer: Fero JD Zhou <FeroJD.Zhou@moxa.com>,
+            Wes Huang <Wes.Huang@moxa.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://www.moxa.com/
+
+Package: uc8200-base-system
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         uc8200-kernel (>= 4.4.176),
+         uc8200-modules (>= 4.4.176),
+         uc8200-moxa-configs (= ${binary:Version}),
+         moxa-version (>= 1.0.0),
+         moxa-led-control (>= 1.1.0),
+         moxa-push-button (>= 1.1.2),
+         moxa-uart-control (>= 1.1.3),
+         moxa-module-control (>= 1.2.0),
+         moxa-firmware-tools (>= 1.0.11),
+         moxa-dio-control,
+         moxa-cellular-utils,
+         moxa-cellular-signald,
+         moxa-wifi-utils,
+         moxa-wifi-signald,
+         tpm2-tools (>= 3.1.3-2),
+         can-utils,
+         firmware-atheros,
+         bluez
+Description: Base system for UC-8200
+ It contains the necessary tools for setting up UC-8200
+
+Package: uc8200-moxa-configs
+Architecture: any
+Depends: ${misc:Depends},
+Description: UC-8200 platform configuration file
+ The platform-related configuration items are recoreded in this file,
+ these items will be referred to other platform packages
