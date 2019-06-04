@@ -1,3 +1,9 @@
+uc8200-system (1.0.1+deb9) stretch; urgency=medium
+
+  * fix: extract out the common udev rule
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Tue, 04 Jun 2019 21:30:08 +0800
+
 uc8200-system (1.0.0+deb9) stretch; urgency=medium
 
   * initail release
