@@ -107,10 +107,6 @@ initial_dio() {
 	init_gpio "491" "in"
 }
 
-initial_can() {
-	ip link set can0 up type can bitrate 125000
-}
-
 uc8200_initial() {
 	local model_name
 
@@ -141,7 +137,6 @@ uc8200_initial() {
 
 	# general initial
 	initial_dio
-	initial_can
 }
 
 umount_rfs() {
