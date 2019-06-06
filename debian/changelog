@@ -1,3 +1,10 @@
+uc8200-system (1.0.2+deb9) stretch; urgency=medium
+
+  * fix: link up can device via udev rule
+  * fix: add moxa-module-control as a dependency for base-system
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 06 Jun 2019 11:39:12 +0800
+
 uc8200-system (1.0.1+deb9) stretch; urgency=medium
 
   * fix: extract out the common udev rule
