@@ -1,3 +1,9 @@
+uc8200-system (1.0.3+deb9) stretch; urgency=medium
+
+  * fix: merge uc8200-moxa-configs package into uc8200-base-system
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Mon, 10 Jun 2019 11:55:50 +0800
+
 uc8200-system (1.0.2+deb9) stretch; urgency=medium
 
   * fix: link up can device via udev rule
