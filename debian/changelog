@@ -1,3 +1,9 @@
+uc8200-system (1.0.4+deb9) stretch; urgency=medium
+
+  * fix: add udev rule for gps
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Tue, 11 Jun 2019 10:45:13 +0800
+
 uc8200-system (1.0.3+deb9) stretch; urgency=medium
 
   * fix: merge uc8200-moxa-configs package into uc8200-base-system
