@@ -54,7 +54,8 @@ init_network_config() {
 get_model_name() {
 	local model_name
 
-	model_name=$(mx-ver -m)
+	# In case the CV model which name is UC-XX-XX (XX)
+	model_name="$(mx-ver -m | awk '{print $1}')"
 
 	case ${model_name} in
 		UC-8210-T-LX|UC-8210-T-LX-S)
@@ -166,7 +167,7 @@ stop_wireless() {
 uc8200_stop() {
 	local model_name
 
-	model_name=$(mx-ver -m)
+	model_name=$(get_model_name)
 
 	case ${model_name} in
 		UC-8210-LX)
