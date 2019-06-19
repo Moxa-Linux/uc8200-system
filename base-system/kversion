@@ -24,7 +24,7 @@ main() {
 		/bin/mx-ver -a
 		;;
 	"")
-		/bin/mx-ver -a | awk '{print $1,$2,$3}'
+		echo "$(mx-ver -m) version $(mx-ver -v)"
 		;;
 	*)
 		usage >&2
