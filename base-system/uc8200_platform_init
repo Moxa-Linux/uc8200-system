@@ -82,7 +82,11 @@ one_time_setting() {
 	# enable bootloader to pass the fsck.repair parameter to kernel
 	fw_setenv robust 1
 
-	init_network_config 2 > /etc/network/interfaces
+	# User may use resize-img to recreate an image for deployment,
+	# hence we leave the network setting unchanged if existing.
+	if [ ! -f "/etc/network/interfaces" ]; then
+		init_network_config 2 > /etc/network/interfaces
+	fi
 }
 
 initial_wifi() {
