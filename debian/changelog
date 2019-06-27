@@ -1,3 +1,11 @@
+uc8200-system (1.0.5+deb9) stretch; urgency=medium
+
+  * fix: image re-deployment makes network setting set to default value
+  * fix: strip CV model message to get the correct model name
+  * fix: adjust kversion to get correct model name
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Mon, 24 Jun 2019 14:57:25 +0800
+
 uc8200-system (1.0.4+deb9) stretch; urgency=medium
 
   * fix: add udev rule for gps
