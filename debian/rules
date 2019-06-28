@@ -4,21 +4,8 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-# Some variables:
-DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
-ifeq ($(origin CC),default)
-CC := $(DEB_HOST_GNU_TYPE)-gcc
-CXX := $(DEB_HOST_GNU_TYPE)-g++
-STRIP := $(DEB_HOST_GNU_TYPE)-strip
-endif
-
 %:
 	dh $@
-
-override_dh_auto_build:
-	$(MAKE) CC=$(CC) CXX=$(CXX) STRIP=$(STRIP)
 
 override_dh_missing:
 	dh_missing --fail-missing
@@ -27,7 +14,6 @@ override_dh_shlibdeps:
 	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
 
 override_dh_installinit:
-	dh_systemd_enable -puc8200-base-system --name=uc8200-base-system uc8200-base-system.service
 	dh_installinit -puc8200-base-system --no-start --no-restart-after-upgrade --noscripts
 
 override_dh_systemd_start:
