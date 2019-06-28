@@ -26,31 +26,6 @@ init_gpio() {
 	fi
 }
 
-init_network_config() {
-	local num_of_eth="${1}"
-	echo "# interfaces(5) file used by ifup(8) and ifdown(8)"
-	echo "# Include files from /etc/network/interfaces.d:"
-	echo "source-directory /etc/network/interfaces.d"
-	echo -n "auto"
-
-	for (( i=0 ; i<"${num_of_eth}"; i++ ))
-	do
-		echo -n " eth${i}"
-	done
-
-	echo " lo"
-	echo "iface lo inet loopback"
-
-	for (( i=0 ; i<"${num_of_eth}"; i++ ))
-	do
-		echo "iface eth${i} inet static"
-		echo "        address 192.168.$((${i} + 3)).127"
-		echo "        network 192.168.$((${i} + 3)).0"
-		echo "        netmask 255.255.255.0"
-		echo "        broadcast 192.168.$((${i} + 3)).255"
-	done
-}
-
 get_model_name() {
 	local model_name
 
@@ -81,12 +56,6 @@ one_time_setting() {
 
 	# enable bootloader to pass the fsck.repair parameter to kernel
 	fw_setenv robust 1
-
-	# User may use resize-img to recreate an image for deployment,
-	# hence we leave the network setting unchanged if existing.
-	if [ ! -f "/etc/network/interfaces" ]; then
-		init_network_config 2 > /etc/network/interfaces
-	fi
 }
 
 initial_wifi() {
