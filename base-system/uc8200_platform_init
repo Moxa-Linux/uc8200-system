@@ -94,8 +94,8 @@ initial_wifi() {
 }
 
 initial_cellular() {
-	mx-module-ctl -i 1
-	mx-module-ctl -p on
+	mx-module-ctl -s 1 -i 1
+	mx-module-ctl -s 1 -p on
 	systemctl start moxa-cellular-signald.service
 	systemctl start moxa-cellular-utils.service
 }
