@@ -1,3 +1,11 @@
+uc8200-system (1.0.6+deb9) stretch; urgency=medium
+
+  * fix: remove the setting for compile C code in debian/rules
+  * fix: adjust the style for case
+  * fix: specify the module slot explicitly
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Fri, 28 Jun 2019 08:29:00 +0800
+
 uc8200-system (1.0.5+deb9) stretch; urgency=medium
 
   * fix: image re-deployment makes network setting set to default value
