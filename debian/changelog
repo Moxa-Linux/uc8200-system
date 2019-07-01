@@ -1,3 +1,9 @@
+uc8200-system (1.0.8+deb9) stretch; urgency=medium
+
+  * fix: upgrade the dependency on moxa-firmware-tools
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Mon, 01 Jul 2019 14:23:23 +0800
+
 uc8200-system (1.0.7+deb9) stretch; urgency=medium
 
   * fix: remove network setting
