@@ -1,3 +1,9 @@
+uc8200-system (1.0.9+deb9) stretch; urgency=medium
+
+  * fix: add moxa-nport utility to control file 
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 04 Jul 2019 20:25:55 +0800
+
 uc8200-system (1.0.8+deb9) stretch; urgency=medium
 
   * fix: upgrade the dependency on moxa-firmware-tools
