@@ -27,6 +27,7 @@ Depends: ${misc:Depends},
          tpm2-tools (>= 3.1.3-2),
          can-utils,
          firmware-atheros,
-         bluez
+         bluez,
+         moxa-nport-real-tty-utils
 Description: Base system for UC-8200
  It contains the necessary tools for setting up UC-8200
