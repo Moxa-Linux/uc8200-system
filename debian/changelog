@@ -1,0 +1,64 @@
+uc8200-system (1.0.9+deb9) stretch; urgency=medium
+
+  * fix: add moxa-nport utility to control file 
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 04 Jul 2019 20:25:55 +0800
+
+uc8200-system (1.0.8+deb9) stretch; urgency=medium
+
+  * fix: upgrade the dependency on moxa-firmware-tools
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Mon, 01 Jul 2019 14:23:23 +0800
+
+uc8200-system (1.0.7+deb9) stretch; urgency=medium
+
+  * fix: remove network setting
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Fri, 28 Jun 2019 15:44:44 +0800
+
+uc8200-system (1.0.6+deb9) stretch; urgency=medium
+
+  * fix: remove the setting for compile C code in debian/rules
+  * fix: adjust the style for case
+  * fix: specify the module slot explicitly
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Fri, 28 Jun 2019 08:29:00 +0800
+
+uc8200-system (1.0.5+deb9) stretch; urgency=medium
+
+  * fix: image re-deployment makes network setting set to default value
+  * fix: strip CV model message to get the correct model name
+  * fix: adjust kversion to get correct model name
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Mon, 24 Jun 2019 14:57:25 +0800
+
+uc8200-system (1.0.4+deb9) stretch; urgency=medium
+
+  * fix: add udev rule for gps
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Tue, 11 Jun 2019 10:45:13 +0800
+
+uc8200-system (1.0.3+deb9) stretch; urgency=medium
+
+  * fix: merge uc8200-moxa-configs package into uc8200-base-system
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Mon, 10 Jun 2019 11:55:50 +0800
+
+uc8200-system (1.0.2+deb9) stretch; urgency=medium
+
+  * fix: link up can device via udev rule
+  * fix: add moxa-module-control as a dependency for base-system
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 06 Jun 2019 11:39:12 +0800
+
+uc8200-system (1.0.1+deb9) stretch; urgency=medium
+
+  * fix: extract out the common udev rule
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Tue, 04 Jun 2019 21:30:08 +0800
+
+uc8200-system (1.0.0+deb9) stretch; urgency=medium
+
+  * initail release
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Mon, 27 May 2019 13:55:54 +0800

@@ -1,0 +1,34 @@
+{
+	"CONFIG_VERSION": "1.1.0",
+
+	"LED_TYPES": [
+		{
+			"TYPE": "SIGNAL",
+			"NUM_OF_GROUPS": 2,
+			"NUM_OF_LEDS_PER_GROUP": 3,
+			"PATHS": [
+				[
+					"UC8200:YELLOW:SGN1-1",
+					"UC8200:YELLOW:SGN1-2",
+					"UC8200:YELLOW:SGN1-3"
+				],
+				[
+					"UC8200:YELLOW:SGN2-1",
+					"UC8200:YELLOW:SGN2-2",
+					"UC8200:YELLOW:SGN2-3"
+				]
+			]
+		},
+		{
+			"TYPE": "PROGRAMMABLE",
+			"NUM_OF_GROUPS": 1,
+			"NUM_OF_LEDS_PER_GROUP": 2,
+			"PATHS": [
+				[
+					"UC8200:YELLOW:USR",
+					"UC8200:GREEN:USR"
+				]
+			]
+		}
+	]
+}

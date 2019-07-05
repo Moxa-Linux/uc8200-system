@@ -1,0 +1,14 @@
+{
+	"ENABLE_MODE":"1",
+	"CONFIG_VERSION":"1.1.0",
+	"NUM_OF_MODULE_SLOT":1,
+	"NUM_OF_SIM_SLOT":2,
+	"POWER_PIN":[103],
+	"POWER_ACT":"1",
+	"RESET_PIN":[511],
+	"SIM_SLOT_PIN":[504],
+	"SLOT_NAME":[1],
+	"PRODUCT_PATH":[
+		"/etc/moxa-configs/module/idProduct"
+	]
+}

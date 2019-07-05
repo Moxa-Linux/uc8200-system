@@ -1,0 +1,1 @@
+DEVPATH=="/devices/platform/soc/30800000.aips-bus/30a10000.can/net/can0", ACTION=="add", RUN+="/sbin/ip link set can0 up type can bitrate 125000"
