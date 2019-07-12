@@ -81,6 +81,16 @@ initial_dio() {
 	init_gpio "491" "in"
 }
 
+initial_tpm() {
+	local tpm2=$(fw_printenv|grep ^tpm2 | cut -d '=' -f 2)
+
+	# check tpm2 is exist or not.
+	if [ "${tpm2}" == "1" ]; then
+		# load tpm2 drivers and service
+		modprobe tpm_spi_tis
+	fi
+}
+
 uc8200_initial() {
 	local model_name
 
@@ -111,6 +121,7 @@ uc8200_initial() {
 
 	# general initial
 	initial_dio
+	initial_tpm
 }
 
 umount_rfs() {

@@ -1,3 +1,10 @@
+uc8200-system (1.0.10+deb9) stretch; urgency=medium
+
+  * fix: load tpm driver automatically
+  * fix: remove dependency tmp2-tools
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Wed, 10 Jul 2019 14:14:48 +0800
+
 uc8200-system (1.0.9+deb9) stretch; urgency=medium
 
   * fix: add moxa-nport utility to control file 
