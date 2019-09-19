@@ -1,7 +1,0 @@
-base-system/kversion /bin
-base-system/expand2fs /sbin
-base-system/uc8200_platform_init /sbin
-base-system/fw_env.config /etc
-base-system/watchdog.conf /etc/modprobe.d
-base-system/09-watchdog.rules /etc/udev/rules.d
-moxa-configs /etc/
