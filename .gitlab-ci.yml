@@ -22,10 +22,10 @@ develop_build:
         - export PKG_FW_VERSION=${version}
         - export PKG_BUILDDATE=$(date +%y%m%d%H)
         - dpkg --add-architecture armhf
-        - echo "deb http://mil-internal-apt:8080/mirror-debian_20180717 stretch main contrib non-free" > /etc/apt/sources.list
+        - echo "deb http://mil-internal-apt:8080/mirror-debian_20190701/ stretch main contrib non-free" > /etc/apt/sources.list
         - curl -fsSL http://mil-internal-apt:8080/mil_internal_apt.gpg | apt-key add -
         - apt-get update
-        - apt-get install crossbuild-essential-armhf -y --allow-unauthenticated
+        - apt-get install crossbuild-essential-armhf libc6-dev:armhf -y --allow-unauthenticated
         - dpkg-buildpackage -us -uc -b -aarmhf
         - echo "The package firmware version=${PKG_FW_VERSION}"
         - echo "The package build date=${PKG_BUILDDATE}"
@@ -49,10 +49,10 @@ release_build:
         - export PKG_FW_VERSION=${version}
         - export PKG_BUILDDATE=$(date +%y%m%d%H)
         - dpkg --add-architecture armhf
-        - echo "deb http://mil-internal-apt:8080/mirror-debian_20180717 stretch main contrib non-free" > /etc/apt/sources.list
+        - echo "deb http://mil-internal-apt:8080/mirror-debian_20190701/ stretch main contrib non-free" > /etc/apt/sources.list
         - curl -fsSL http://mil-internal-apt:8080/mil_internal_apt.gpg | apt-key add -
         - apt-get update
-        - apt-get install crossbuild-essential-armhf -y --allow-unauthenticated
+        - apt-get install crossbuild-essential-armhf libc6-dev:armhf -y --allow-unauthenticated
         - dpkg-buildpackage -us -uc -b -aarmhf
         - echo "The package firmware version=${PKG_FW_VERSION}"
         - echo "The package build date=${PKG_BUILDDATE}"
@@ -71,6 +71,7 @@ prepare_develop_debs:
         - stretch-develop
     dependencies:
         - develop_build
+    when: manual
     script:
         - mkdir -p /cache/stretch/develop/
         - cp *.deb /cache/stretch/develop/
@@ -85,6 +86,7 @@ prepare_release_debs:
         - stretch
     dependencies:
         - release_build
+    when: manual
     script:
         - mkdir -p /cache/stretch/release/
         - cp *.deb /cache/stretch/release/
