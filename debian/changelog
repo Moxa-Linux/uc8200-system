@@ -1,3 +1,13 @@
+uc8200-system (1.0.12+deb9) stretch; urgency=medium
+
+  * Update moxa-cellular-utils
+  * Remove bluez and firmware-atheros
+  * Add jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d
+  * Add dev packages for dio, gpio, led push-button and uart
+  * Add moxa-ublox-config-utils to control the mode for Toby L2
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Wed, 06 Nov 2019 19:43:09 +0800
+
 uc8200-system (1.0.11+deb9) stretch; urgency=medium
 
   * Update dependencies version
