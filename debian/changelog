@@ -1,3 +1,11 @@
+uc8200-system (1.0.13+deb9) stretch; urgency=medium
+
+  * Change file install method
+  * Remove dependence 'poweroff.target'
+  * Update dependence version
+
+ -- Remus Wu <remusty.wu@moxa.com>  Wed, 29 Apr 2020 15:27:17 +0800
+
 uc8200-system (1.0.12+deb9) stretch; urgency=medium
 
   * Update moxa-cellular-utils
@@ -23,7 +31,7 @@ uc8200-system (1.0.10+deb9) stretch; urgency=medium
 
 uc8200-system (1.0.9+deb9) stretch; urgency=medium
 
-  * fix: add moxa-nport utility to control file 
+  * fix: add moxa-nport utility to control file
 
  -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 04 Jul 2019 20:25:55 +0800
 
