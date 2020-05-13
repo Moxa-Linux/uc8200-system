@@ -11,8 +11,8 @@ Homepage: http://www.moxa.com/
 Package: uc8200-base-system
 Architecture: any
 Depends: ${misc:Depends},
-         uc8200-kernel (>= 4.4.176+1.0.9),
-         uc8200-modules (>= 4.4.176+1.0.9),
+         uc8200-kernel (>= 4.4.176+1.0.10),
+         uc8200-modules (>= 4.4.176+1.0.10),
          libmoxa-dio-control1 (>= 1.2.0+deb9),
          libmoxa-dio-control-dev (>= 1.2.0+deb9),
          libmoxa-gpio-control1 (>= 1.0.2+deb9),
