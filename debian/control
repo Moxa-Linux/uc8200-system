@@ -36,7 +36,7 @@ Depends: ${misc:Depends},
          moxa-version (>= 1.0.1),
          moxa-wifi-utils (>= 1.8.2),
          moxa-wifi-signald (>= 1.8.2),
-         jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d (>= 3.0.00017.1+1.0.1+deb9),
+         jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d (>= 3.0.00017.1+1.1.0+deb9),
          can-utils,
 Description: Base system for UC-8200
  It contains the necessary tools for setting up UC-8200
