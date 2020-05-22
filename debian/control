@@ -11,8 +11,8 @@ Homepage: http://www.moxa.com/
 Package: uc8200-base-system
 Architecture: any
 Depends: ${misc:Depends},
-         uc8200-kernel (>= 4.4.176+1.0.10),
-         uc8200-modules (>= 4.4.176+1.0.10),
+         uc8200-kernel (>= 4.4.176+1.0.11),
+         uc8200-modules (>= 4.4.176+1.0.11),
          libmoxa-dio-control1 (>= 1.2.0+deb9),
          libmoxa-dio-control-dev (>= 1.2.0+deb9),
          libmoxa-gpio-control1 (>= 1.0.2+deb9),
@@ -36,7 +36,9 @@ Depends: ${misc:Depends},
          moxa-version (>= 1.0.1),
          moxa-wifi-utils (>= 1.8.2),
          moxa-wifi-signald (>= 1.8.2),
-         jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d (>= 3.0.00017.1+1.1.0+deb9),
+         firmware-atheros (>= 20161130-5),
+         jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d (>= 3.0.00017.1+1.1.1+deb9),
          can-utils,
+Suggests:
 Description: Base system for UC-8200
  It contains the necessary tools for setting up UC-8200
