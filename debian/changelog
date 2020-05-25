@@ -1,3 +1,9 @@
+uc8200-system (1.0.17+deb9) stretch; urgency=medium
+
+  * debian: update moxa-cellular-utils to 2.1.7
+
+ -- Remus Wu <remusty.wu@moxa.com>  Mon, 25 May 2020 14:20:59 +0800
+
 uc8200-system (1.0.16+deb9) stretch; urgency=medium
 
   * debian: update jjplus-qca6174a-driver to 3.0.00017.1+1.1.1+deb9

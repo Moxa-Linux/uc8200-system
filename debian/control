@@ -23,8 +23,8 @@ Depends: ${misc:Depends},
          libmoxa-push-button-dev (>= 1.1.3+deb9),
          libmoxa-uart-control1 (>= 1.1.4+deb9),
          libmoxa-uart-control-dev (>= 1.1.4+deb9),
-         moxa-cellular-signald (>= 2.1.6),
-         moxa-cellular-utils (>= 2.1.6),
+         moxa-cellular-signald (>= 2.1.7),
+         moxa-cellular-utils (>= 2.1.7),
          moxa-dio-control (>= 1.2.0+deb9),
          moxa-firmware-tools (>= 1.1.3+deb9),
          moxa-led-control (>= 1.1.1+deb9),
@@ -39,6 +39,5 @@ Depends: ${misc:Depends},
          firmware-atheros (>= 20161130-5),
          jjplus-qca6174a-driver-4.4.0-rt-moxa-imx7d (>= 3.0.00017.1+1.1.1+deb9),
          can-utils,
-Suggests:
 Description: Base system for UC-8200
  It contains the necessary tools for setting up UC-8200
