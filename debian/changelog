@@ -1,3 +1,14 @@
+uc8200-system (1.1.0+deb9) stretch; urgency=medium
+
+  * feat: move moxa-config to base-system
+  * feat: add power status support
+  * debian: remove moxa-config
+  * debian: update moxa-nport-real-tty-utils to 1.19+1.0.0
+  * debian: update moxa-wifi-utils to 1.8.3
+  * debian: update moxa-ublox-config-utils to 1.2.0
+
+ -- Remus Wu <remusty.wu@moxa.com>  Thu, 28 May 2020 18:48:40 +0800
+
 uc8200-system (1.0.17+deb9) stretch; urgency=medium
 
   * debian: update moxa-cellular-utils to 2.1.7
