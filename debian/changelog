@@ -1,3 +1,9 @@
+uc8200-system (1.1.1+deb9) stretch; urgency=medium
+
+  * fix: get value only, don't set to input
+
+ -- Remus Wu <remusty.wu@moxa.com>  Fri, 29 May 2020 10:48:01 +0800
+
 uc8200-system (1.1.0+deb9) stretch; urgency=medium
 
   * feat: move moxa-config to base-system
