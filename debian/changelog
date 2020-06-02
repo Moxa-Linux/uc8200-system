@@ -1,3 +1,11 @@
+uc8200-system (1.1.2+deb9) stretch; urgency=medium
+
+  * fix: dio should initial in api NOT initial script
+  * fix: set gpio value and direction in single step
+  * debian: update moxa-gpio-control to 1.0.3+deb9
+
+ -- Remus Wu <remusty.wu@moxa.com>  Tue, 02 Jun 2020 23:07:28 +0800
+
 uc8200-system (1.1.1+deb9) stretch; urgency=medium
 
   * fix: get value only, don't set to input
