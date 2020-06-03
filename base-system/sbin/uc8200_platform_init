@@ -12,20 +12,6 @@ rfs_resize() {
 	/sbin/reboot -d -f -i
 }
 
-init_gpio() {
-	local gpio="${1}"
-	local direction="${2}"
-	local value="${3}"
-
-	if [ ! -e "/sys/class/gpio/gpio${gpio}" ]; then
-		echo "${gpio}" > "/sys/class/gpio/export"
-		echo "${direction}" > "/sys/class/gpio/gpio${gpio}/direction"
-	fi
-	if [ "${direction}" == "out" ]; then
-		echo "${value}" > "/sys/class/gpio/gpio${gpio}/value"
-	fi
-}
-
 get_model_name() {
 	local model_name
 
@@ -69,18 +55,6 @@ initial_cellular() {
 	systemctl start moxa-cellular-utils.service
 }
 
-initial_dio() {
-	# DI/DO
-	init_gpio "480" "out" "0"
-	init_gpio "481" "out" "0"
-	init_gpio "482" "out" "0"
-	init_gpio "483" "out" "0"
-	init_gpio "488" "in"
-	init_gpio "489" "in"
-	init_gpio "490" "in"
-	init_gpio "491" "in"
-}
-
 initial_tpm() {
 	local tpm2=$(fw_printenv|grep ^tpm2 | cut -d '=' -f 2)
 
@@ -120,7 +94,6 @@ uc8200_initial() {
 	esac
 
 	# general initial
-	initial_dio
 	initial_tpm
 }
 
