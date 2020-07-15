@@ -1,3 +1,9 @@
+uc8200-system (1.2.0+deb9) stretch; urgency=medium
+
+  * debian: update moxa-cellular-utils to 2.4.3
+
+ -- Remus Wu <remusty.wu@moxa.com>  Wed, 15 Jul 2020 10:57:45 +0800
+
 uc8200-system (1.1.2+deb9) stretch; urgency=medium
 
   * fix: dio should initial in api NOT initial script
